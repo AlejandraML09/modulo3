@@ -1,0 +1,23 @@
+
+    <div class="card_container">
+        <div class="experience-container">
+            <h1 class="card-title">Experiencia</h1>
+            <div *ngFor="let experience of experienceList" class="experience-details-container">
+                <a [href]="experience.url"><img class="experience-details-icon" [src]="experience.img" alt=""></a>
+                <div>
+                    <h2 class="experience-title">{{experience.position}}</h2>
+                    <p>{{experience.company}}</p>
+                    <p class="experience-years">{{experience.experienceYears}}.</p>
+                </div>
+            </div>
+            <h1 class="card-title">Educación</h1>
+            <div *ngFor="let education of educationList" class="experience-details-container">
+                <a [href]="education.url"><img class="experience-details-icon" [src]="education.img" alt=""></a>
+                <div>
+                    <h2 class="experience-title">{{education.courseTitle}}</h2>
+                    <p>{{education.company}}</p>
+                    <p>{{education.educationYears}}.</p>
+                </div>
+            </div>
+        </div>
+    </div>
